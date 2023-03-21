@@ -41,7 +41,7 @@ module "databricks_workspaces" {
 
 ## Simple use test ❤️
 
-> with az cli logged and with the right permissions! 👀️
+> with az cli logged and with the right permissions! `az login` 👀️
 
 Create a new directory.
 
