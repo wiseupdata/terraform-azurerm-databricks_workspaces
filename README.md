@@ -16,8 +16,6 @@
 
 ---
 
-<a name="readme-top"></a>
-
 <h1>
 <img align="left" alt="DP-203" src="https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/terraform.png" width="100" />
 
@@ -46,11 +44,13 @@ module "databricks_workspaces" {
 > with az cli logged and with the right permissions! 👀️
 
 Create a new directory.
+
 ```
 mkdir tmp && cd tmp 
 ```
 
 Create the main file with some infos.
+
 ```
 cat <<EOF > main.tf
 module "databricks_workspaces" {
@@ -69,6 +69,7 @@ EOF
 ```
 
 Create the resources in Azure.
+
 ```
 terraform init
 terraform fmt -recursive
@@ -99,8 +100,6 @@ module "databricks_workspaces" {
 }
 ```
 
-
-
 ## Suggestion to  production!
 
 main.tf
@@ -123,3 +122,15 @@ module "databricks_workspaces" {
 ---
 
 <br>
+
+# Troubleshoot 😕 
+
+Recreate a workspace!
+
+```
+# Find all your resources!
+terraform state list 
+
+# Recreate the one with issue
+terraform apply -replace=module.azure_main.module.databricks_workspaces.azurerm_databricks_workspace.this[0]
+```
