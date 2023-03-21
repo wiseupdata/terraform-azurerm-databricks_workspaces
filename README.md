@@ -21,15 +21,15 @@
 <h1>
 <img align="left" alt="DP-203" src="https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/terraform.png" width="100" />
 
-Module - Databricks workspaces in Azure :rocket:
+Module - Databricks workspaces in Azure 🚀️ 
 
 </h1>
 
-> Create multiples work spaces 
+> Create multiples work spaces
 
 <br>
 
-## Simple use :airplane:
+## Simple use ❤️ 
 
 > with az cli logged and with the right permissions! 👀️
 
@@ -45,6 +45,7 @@ EOF
 ```
 
 main.tf
+
 ```
 module "databricks_workspaces" {
   source  = "wiseupdata/databricks_workspaces/azurerm"
@@ -71,6 +72,7 @@ rm -Rf tmp
 ## Example 2
 
 main.tf
+
 ```
 module "databricks_workspaces" {
   source  = "wiseupdata/databricks_workspaces/azurerm"
@@ -82,6 +84,7 @@ module "databricks_workspaces" {
 ## Example 3
 
 main.tf
+
 ```
 module "databricks_workspaces" {
   source  = "wiseupdata/databricks_workspaces/azurerm"
@@ -98,6 +101,5 @@ module "databricks_workspaces" {
 1. [Wise Up Data - Github](https://github.com/wiseupdata)
 
 ---
-
 
 <br>
