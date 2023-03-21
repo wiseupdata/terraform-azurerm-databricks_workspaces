@@ -29,14 +29,28 @@ Module - Databricks workspaces in Azure 🚀️
 
 <br>
 
-## Simple use ❤️
+## Example 1 -  production read!
+
+main.tf
+
+```
+module "databricks_workspaces" {
+  source  = "wiseupdata/databricks_workspaces/azurerm"
+  version = "0.0.1"
+  areas = ["data", "mkt"]
+}
+```
+
+## Simple use test ❤️
 
 > with az cli logged and with the right permissions! 👀️
 
+Create a new directory.
 ```
 mkdir tmp && cd tmp 
 ```
 
+Create the main file with some infos.
 ```
 cat <<EOF > main.tf
 module "databricks_workspaces" {
@@ -54,6 +68,7 @@ output "databricks_workspaces_outputs" {
 EOF
 ```
 
+Create the resources in Azure.
 ```
 terraform init
 terraform fmt -recursive
@@ -62,6 +77,7 @@ terraform plan -out plan.output
 terraform apply plan.output
 ```
 
+Check the result.
 ![](https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/20230321_185838_image.png)
 
 # Clean the resources
@@ -72,7 +88,7 @@ cd ..
 rm -Rf tmp
 ```
 
-## Example 1
+## Example for hello world!
 
 main.tf
 
@@ -83,19 +99,9 @@ module "databricks_workspaces" {
 }
 ```
 
-## Example 2
 
-main.tf
 
-```
-module "databricks_workspaces" {
-  source  = "wiseupdata/databricks_workspaces/azurerm"
-  version = "0.0.1"
-  areas = ["data", "mkt"]
-}
-```
-
-## Example 3
+## Suggestion to  production!
 
 main.tf
 
