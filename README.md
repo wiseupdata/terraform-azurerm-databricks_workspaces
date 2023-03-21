@@ -62,7 +62,7 @@ terraform plan -out plan.output
 terraform apply plan.output
 ```
 
-![](assets/20230321_185838_image.png)
+![](https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/20230321_185838_image.png)
 
 # Clean the resources
 
