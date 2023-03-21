@@ -8,7 +8,7 @@
   <img align="left" alt="wise Up Data | Twitter" width="22px" src="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces/blob/main/assets/twitter.svg" />
 </a>
 <a href="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces">
-  <img align="left" alt="wise Up Data's LinkedIN" width="22px" src="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces/blob/main/assets/linkedin.svg" />
+  <img align="left" alt="wise Up Data's LinkedIN" width="22px" src="https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/6b3dc41c772ba34c80e0bcb7485044db43e5d2a2/assets/linkedin.svg" />
 </a>
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=wiseupdata.terraform-azurerm-databricks_workspaces&left_color=green&right_color=black) 
@@ -19,7 +19,7 @@
 <a name="readme-top"></a>
 
 <h1>
-<img align="left" alt="DP-203" src="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces/blob/main/assets/terraform.png" width="100" />
+<img align="left" alt="DP-203" src="https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/terraform.png" width="100" />
 
 # Module - Databricks workspaces in Azure.
 </h1>
