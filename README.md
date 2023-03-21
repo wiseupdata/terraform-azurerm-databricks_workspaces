@@ -21,7 +21,7 @@
 <h1>
 <img align="left" alt="DP-203" src="https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/terraform.png" width="100" />
 
-Module - Databricks workspaces in Azure.
+Module - Databricks workspaces in Azure :rocket:
 
 </h1>
 
@@ -29,7 +29,7 @@ Module - Databricks workspaces in Azure.
 
 <br>
 
-## Simple use
+## Simple use :airplane:
 
 > with az cli logged and with the right permissions! 👀️
 
