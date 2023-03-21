@@ -1,9 +1,14 @@
 output "databricks_id" {
-  description = "Databricks ID"
-  value       = azurerm_databricks_workspace.this.id
+  description = "List with Databricks IDs"
+  value       = [for i in azurerm_databricks_workspace.this : i.id]
 }
 
 output "databricks_url" {
-  description = "Databricks main URL"
-  value       = azurerm_databricks_workspace.this.workspace_url
+  description = "List with Databricks main URLs"
+  value       = [for i in azurerm_databricks_workspace.this : i.workspace_url]
+}
+
+output "databricks_name" {
+  description = "List with Databricks names"
+  value       = local.names
 }

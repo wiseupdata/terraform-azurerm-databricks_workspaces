@@ -9,8 +9,14 @@ variable "company_name" {
   default     = "wiseupdata"
 }
 
+variable "company_abrv" {
+  description = "The name of the abbreviation."
+  type        = string
+  default     = "edf"
+}
+
 variable "app_name" {
-  description = "The name of the application, dbs is the abreviation to Databricks"
+  description = "The name of the application, dbs is the abbreviation to Databricks"
   type        = string
   default     = "dbs"
 }
@@ -18,7 +24,7 @@ variable "app_name" {
 variable "areas" {
   description = "Areas to created the workspaces, one per area"
   type        = list(string)
-  default     = ["data", "market"]
+  default     = ["data", "mkt"]
 }
 
 variable "location" {
@@ -61,12 +67,12 @@ variable "default_tags" {
 
 locals {
 
-  # Default name
-  name = "${var.app_name}-${var.company_name}-${var.env}"
+  # Default names for the Databricks
+  names = [for i in var.areas : "${var.app_name}-${var.company_name}-${i}-${var.env}"]
 
-  # Databricks managed storage account name
-  new_dbs_stg_name = "stgdbs${var.company_name}${var.env}"
+  # Databricks managed storage account names
+  new_dbs_stg_names = [for i in var.areas : "stgdbs${var.company_abrv}${i}${var.env}"]
 
   # The name of the resource group where Azure should place the managed Databricks resources. Changing this forces a new resource to be created
-  new_managed_rg_dbs_name = "rg-dbs-managed-${var.company_name}-${var.env}"
+  new_managed_rg_dbs_names = [for i in var.areas : "rg-dbs-managed-${var.company_name}-${i}-${var.env}"]
 }
