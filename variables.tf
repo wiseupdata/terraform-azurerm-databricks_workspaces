@@ -1,6 +1,7 @@
 variable "rg_name" {
   description = "The name of the Resource Group in which the Databricks Workspace should exist. Changing this forces a new resource to be created "
-  type    = string
+  type        = string
+  default     = "auto-create"
 }
 
 variable "company_name" {
@@ -66,6 +67,8 @@ variable "default_tags" {
 }
 
 locals {
+
+  rg_name = var.rg_name != "auto-create" ? var.rg_name : "rg-dbs-workspaces-${var.company_name}-${var.env}"
 
   # Default names for the Databricks
   names = [for i in var.areas : "${var.app_name}-${var.company_name}-${i}-${var.env}"]
