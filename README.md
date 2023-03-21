@@ -1,11 +1,11 @@
 <a href="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces">
-  <img align="left" alt="Wise Up Data's Instagram" width="22px" src="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces/blob/main/assets/instagram.png" />   
+  <img align="left" alt="Wise Up Data's Instagram" width="22px" src="https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/instagram.png" />   
 </a> 
 <a href="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces">
-  <img align="left" alt="wise Up Data's Discord" width="22px" src="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces/blob/main/assets/discord.svg" />
+  <img align="left" alt="wise Up Data's Discord" width="22px" src="https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/discord.svg" />
 </a>
 <a href="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces">
-  <img align="left" alt="wise Up Data | Twitter" width="22px" src="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces/blob/main/assets/twitter.svg" />
+  <img align="left" alt="wise Up Data | Twitter" width="22px" src="https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/twitter.svg" />
 </a>
 <a href="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces">
   <img align="left" alt="wise Up Data's LinkedIN" width="22px" src="https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/6b3dc41c772ba34c80e0bcb7485044db43e5d2a2/assets/linkedin.svg" />
@@ -21,7 +21,7 @@
 <h1>
 <img align="left" alt="DP-203" src="https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/terraform.png" width="100" />
 
-# Module - Databricks workspaces in Azure.
+Module - Databricks workspaces in Azure.
 </h1>
 
 <br>
