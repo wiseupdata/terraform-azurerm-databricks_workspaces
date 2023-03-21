@@ -16,7 +16,7 @@
 
 ---
 
-`<a name="readme-top"></a>`
+<a name="readme-top"></a>
 
 <h1>
 <img align="left" alt="DP-203" src="https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/terraform.png" width="100" />
