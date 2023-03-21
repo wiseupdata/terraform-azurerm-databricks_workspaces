@@ -1,14 +1,14 @@
 <a href="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces">
-  <img align="left" alt="Wise Up Data's Instagram" width="22px" src="assets/instagram.png" />   
+  <img align="left" alt="Wise Up Data's Instagram" width="22px" src="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces/blob/main/assets/instagram.png" />   
 </a> 
 <a href="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces">
-  <img align="left" alt="wise Up Data's Discord" width="22px" src="assets/discord.svg" />
+  <img align="left" alt="wise Up Data's Discord" width="22px" src="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces/blob/main/assets/discord.svg" />
 </a>
 <a href="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces">
-  <img align="left" alt="wise Up Data | Twitter" width="22px" src="assets/twitter.svg" />
+  <img align="left" alt="wise Up Data | Twitter" width="22px" src="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces/blob/main/assets/twitter.svg" />
 </a>
 <a href="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces">
-  <img align="left" alt="wise Up Data's LinkedIN" width="22px" src="assets/linkedin.svg" />
+  <img align="left" alt="wise Up Data's LinkedIN" width="22px" src="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces/blob/main/assets/linkedin.svg" />
 </a>
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=wiseupdata.terraform-azurerm-databricks_workspaces&left_color=green&right_color=black) 
@@ -19,7 +19,7 @@
 <a name="readme-top"></a>
 
 <h1>
-<img align="left" alt="DP-203" src="assets/terraform.png" width="100" />
+<img align="left" alt="DP-203" src="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces/blob/main/assets/terraform.png" width="100" />
 
 # Module - Databricks workspaces in Azure.
 </h1>
@@ -31,10 +31,9 @@ Simple example:
 
 main.tf
 ```
-module "rg" {
-  source       = "wiseupdata/simple-resource-group/azurerm"
-  version      = "v0.0.1"
-  company_name = "wiseupdata"
+module "databricks_workspaces" {
+  source  = "wiseupdata/databricks_workspaces/azurerm"
+  version = "0.0.1"
 }
 ```
 

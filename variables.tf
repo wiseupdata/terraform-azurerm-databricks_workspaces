@@ -1,5 +1,5 @@
 variable "rg_name" {
-  default = "The name of the Resource Group in which the Databricks Workspace should exist. Changing this forces a new resource to be created "
+  description = "The name of the Resource Group in which the Databricks Workspace should exist. Changing this forces a new resource to be created "
   type    = string
 }
 
