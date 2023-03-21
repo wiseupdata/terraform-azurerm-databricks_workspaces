@@ -27,7 +27,7 @@ Module - Databricks workspaces in Azure 🚀️
 
 <br>
 
-## Example 1 -  production read!
+## Example 1 - Production read!
 
 main.tf
 
@@ -35,9 +35,13 @@ main.tf
 module "databricks_workspaces" {
   source  = "wiseupdata/databricks_workspaces/azurerm"
   version = "0.0.1"
-  areas = ["data", "mkt"]
+  areas = ["data", "sales"]
 }
 ```
+
+- Auto-generated tags
+- Auto-generated resource group
+- Apply's the Standard, environment as a suffix
 
 ## Simple use test ❤️
 
@@ -79,7 +83,15 @@ terraform apply plan.output
 ```
 
 Check the result.
-![](https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/20230321_185838_image.png)
+
+---
+
+![](https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/20230321_211722_image.png)
+
+
+![](https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/20230321_211843_image.png)
+
+---
 
 # Clean the resources
 
@@ -123,7 +135,7 @@ module "databricks_workspaces" {
 
 <br>
 
-# Troubleshoot 😕 
+# Troubleshoot 😕
 
 Recreate a workspace!
 

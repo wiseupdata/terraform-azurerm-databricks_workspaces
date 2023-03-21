@@ -19,13 +19,13 @@ variable "company_abrv" {
 variable "app_name" {
   description = "The name of the application, dbs is the abbreviation to Databricks"
   type        = string
-  default     = "dbs"
+  default     = "databricks"
 }
 
 variable "areas" {
   description = "Areas to created the workspaces, one per area"
   type        = list(string)
-  default     = ["data", "mkt"]
+  default     = ["data", "sales"]
 }
 
 variable "location" {
@@ -62,13 +62,20 @@ variable "default_tags" {
   description = "Default tags for all resources"
   type        = map(string)
   default = {
-    "managed_by" = "terraform"
+    "auto-create" = "true"
   }
 }
 
 locals {
 
-  rg_name = var.rg_name != "auto-create" ? var.rg_name : "rg-dbs-workspaces-${var.company_name}-${var.env}"
+  basic_tags = {
+    "managed_by" : "terraform",
+    "app_name" : var.app_name,
+    "env" : var.env,
+    "company" : var.company_name
+  }
+
+  rg_name = var.rg_name != "auto-create" ? var.rg_name : "rg-${var.app_name}-workspaces-${var.company_name}-${var.env}"
 
   # Default names for the Databricks
   names = [for i in var.areas : "${var.app_name}-${var.company_name}-${i}-${var.env}"]
@@ -77,5 +84,8 @@ locals {
   new_dbs_stg_names = [for i in var.areas : "stgdbs${var.company_abrv}${i}${var.env}"]
 
   # The name of the resource group where Azure should place the managed Databricks resources. Changing this forces a new resource to be created
-  new_managed_rg_dbs_names = [for i in var.areas : "rg-managed-dbs-${var.company_name}-${i}-${var.env}"]
+  new_managed_rg_dbs_names = [for i in var.areas : "rg-managed-${var.app_name}-${var.company_name}-${i}-${var.env}"]
+
+  default_tags = keys(var.default_tags)[0] == "auto-create" ? local.basic_tags : var.default_tags
+
 }

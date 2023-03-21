@@ -1,9 +1,12 @@
 resource "azurerm_resource_group" "this" {
-  name     = local.rg_name
-  location = var.location
 
   # Only create the resource group if no name is specified by the user
   count = var.rg_name != "auto-create" ? 0 : 1
+
+  name     = local.rg_name
+  location = var.location
+  tags     = local.default_tags
+
 }
 
 resource "azurerm_databricks_workspace" "this" {
@@ -19,7 +22,9 @@ resource "azurerm_databricks_workspace" "this" {
     storage_account_name     = local.new_dbs_stg_names[count.index]
     storage_account_sku_name = var.new_stg_sku
   }
- 
-  tags = var.default_tags
+
+  tags = merge(local.default_tags, {
+    area : var.areas[count.index]
+  })
 
 }
