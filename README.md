@@ -145,3 +145,4 @@ terraform state list
 # Recreate the one with issue
 terraform apply -replace=module.azure_main.module.databricks_workspaces.azurerm_databricks_workspace.this[0]
 ```
+
