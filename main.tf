@@ -19,8 +19,7 @@ resource "azurerm_databricks_workspace" "this" {
     storage_account_name     = local.new_dbs_stg_names[count.index]
     storage_account_sku_name = var.new_stg_sku
   }
+ 
   tags = var.default_tags
-
-  depends_on = var.resource_group_name != "auto-create" ? null : [azurerm_resource_group.this[0]]
 
 }
