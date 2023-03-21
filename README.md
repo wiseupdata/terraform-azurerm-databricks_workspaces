@@ -12,8 +12,7 @@
 </a>
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=wiseupdata.terraform-azurerm-databricks_workspaces&left_color=green&right_color=black) 
-![license](https://img.shields.io/github/license/wiseupdata/terraform-azurerm-databricks_workspaces?style=plastic)
-
+![GitHub](https://img.shields.io/github/license/wiseupdata/terraform-azurerm-databricks_workspaces)
 ---
 
 <a name="readme-top"></a>
