@@ -14,6 +14,6 @@ output "databricks_name" {
 }
 
 output "resource_group_name" {
-  description = "List with Databricks names"
+  description = "Databricks resource group home"
   value       = local.rg_name
 }

@@ -21,7 +21,7 @@
 <h1>
 <img align="left" alt="DP-203" src="https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/terraform.png" width="100" />
 
-Module - Databricks workspaces in Azure 🚀️ 
+Module - Databricks workspaces in Azure 🚀️
 
 </h1>
 
@@ -29,20 +29,50 @@ Module - Databricks workspaces in Azure 🚀️
 
 <br>
 
-## Simple use ❤️ 
+## Simple use ❤️
 
 > with az cli logged and with the right permissions! 👀️
 
 ```
 mkdir tmp && cd tmp 
+```
 
+```
 cat <<EOF > main.tf
 module "databricks_workspaces" {
   source  = "wiseupdata/databricks_workspaces/azurerm"
   version = "0.0.1"
 }
+
+provider "azurerm" {
+  features {}
+}
+
+output "databricks_workspaces_outputs" {
+  value = module.databricks_workspaces
+}
 EOF
 ```
+
+```
+terraform init
+terraform fmt -recursive
+terraform validate
+terraform plan -out plan.output
+terraform apply plan.output
+```
+
+![](assets/20230321_185838_image.png)
+
+# Clean the resources
+
+```
+terraform destroy -auto-approve
+cd ..
+rm -Rf tmp
+```
+
+## Example 1
 
 main.tf
 
@@ -51,22 +81,6 @@ module "databricks_workspaces" {
   source  = "wiseupdata/databricks_workspaces/azurerm"
   version = "0.0.1"
 }
-```
-
-```
-terraform init
-terraform fmt -recursive
-terraform validate
-terraform plan -output plan.output
-terraform apply plan.output
-```
-
-# Clean the resources
-
-```
-terraform destroy -auto-approve
-cd ..
-rm -Rf tmp
 ```
 
 ## Example 2

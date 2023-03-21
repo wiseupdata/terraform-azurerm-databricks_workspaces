@@ -77,5 +77,5 @@ locals {
   new_dbs_stg_names = [for i in var.areas : "stgdbs${var.company_abrv}${i}${var.env}"]
 
   # The name of the resource group where Azure should place the managed Databricks resources. Changing this forces a new resource to be created
-  new_managed_rg_dbs_names = [for i in var.areas : "rg-dbs-managed-${var.company_name}-${i}-${var.env}"]
+  new_managed_rg_dbs_names = [for i in var.areas : "rg-managed-dbs-${var.company_name}-${i}-${var.env}"]
 }
