@@ -86,8 +86,7 @@ Check the result.
 
 ---
 
-![](https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/20230321_211722_image.png)
-
+![](https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/20230321_212542_image.png)
 
 ![](https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/20230321_211843_image.png)
 
