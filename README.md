@@ -46,7 +46,7 @@ module "databricks_workspaces" {
 - Apply's the Standard, environment as suffix
 - All variables are aptionals and can be overwrite with a custom value
 
-## Config. 2
+## Config. 2 👋
 
 main.tf
 
