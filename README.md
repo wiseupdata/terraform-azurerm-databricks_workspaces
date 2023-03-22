@@ -23,7 +23,7 @@ Module - Databricks workspaces in Azure 🚀️
 
 </h1>
 
-> Create multiples work spaces
+> Easy, create multiples Databricks workspaces | last version tested >> Terraform 4.1 and azurerm 3.48
 
 <br>
 
