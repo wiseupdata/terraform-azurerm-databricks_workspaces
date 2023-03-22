@@ -27,7 +27,7 @@ Module - Databricks workspaces in Azure 🚀️
 
 <br>
 
-## Example 1 - Production read!
+## Simple config. ❤️
 
 main.tf
 
@@ -39,11 +39,29 @@ module "databricks_workspaces" {
 }
 ```
 
-- Auto-generated tags
-- Auto-generated resource group
-- Apply's the Standard, environment as a suffix
+## Features ✨️
 
-## Simple use test ❤️
+- Auto-generated tags
+- Auto-generated the resource group
+- Apply's the Standard, environment as suffix
+- All variables are aptionals and can be overwrite with a custom value
+
+## Config. 2
+
+main.tf
+
+```
+module "databricks_workspaces" {
+  source  = "wiseupdata/databricks_workspaces/azurerm"
+  version = "0.0.1"
+  areas   = ["data", "mkt"]
+  existent_rg_name = "your_resource_group_name"
+  company_name = "your_company_name"
+  company_abrv = "your_company_abbreviation"
+}
+```
+
+## Hello world 🎉
 
 > with az cli logged and with the right permissions! `az login` 👀️
 
@@ -82,7 +100,7 @@ terraform plan -out plan.output
 terraform apply plan.output
 ```
 
-Check the result.
+Check the result🏅
 
 ---
 
@@ -92,7 +110,7 @@ Check the result.
 
 ---
 
-# Clean the resources
+# Clean the resources 🏳
 
 ```
 terraform destroy -auto-approve
@@ -100,7 +118,7 @@ cd ..
 rm -Rf tmp
 ```
 
-## Example for hello world!
+## Config. 2 for hello world 🏁
 
 main.tf
 
@@ -111,22 +129,7 @@ module "databricks_workspaces" {
 }
 ```
 
-## Suggestion to  production!
-
-main.tf
-
-```
-module "databricks_workspaces" {
-  source  = "wiseupdata/databricks_workspaces/azurerm"
-  version = "0.0.1"
-  areas   = ["data", "mkt"]
-  rg_name = "my_rg_name"
-  company_name = "company_name"
-  company_abrv = "company_abbreviation"
-}
-```
-
-# References
+# References🤘
 
 1. [Wise Up Data - Github](https://github.com/wiseupdata)
 
