@@ -11,7 +11,7 @@ variable "company_name" {
 }
 
 variable "company_abrv" {
-  description = "The name of the abbreviation."
+  description = "The name of the company's abbreviation."
   type        = string
   default     = "edf"
 }
