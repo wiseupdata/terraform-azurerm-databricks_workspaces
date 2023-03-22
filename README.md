@@ -90,7 +90,7 @@ output "databricks_workspaces_outputs" {
 EOF
 ```
 
-Create the resources in Azure.
+Create the resources in Azure 🤜
 
 ```
 terraform init
@@ -118,7 +118,7 @@ cd ..
 rm -Rf tmp
 ```
 
-## Config. 2 for hello world 🏁
+## Config. 3 used in the hello world 🏁
 
 main.tf
 
