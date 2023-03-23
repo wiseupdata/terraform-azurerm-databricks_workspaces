@@ -2,8 +2,6 @@ Easy create multiples Databricks workspaces!
 
 --- 
 
-<p align="center">
-
 <a href="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces">
 <img align="left" alt="Wise Up Data's Instagram" width="22px" src="https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/instagram.png" />   
 </a> 
@@ -23,8 +21,6 @@ Easy create multiples Databricks workspaces!
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=wiseupdata.terraform-azurerm-databricks_workspaces&left_color=green&right_color=black)
 
 ![GitHub](https://img.shields.io/github/license/wiseupdata/terraform-azurerm-databricks_workspaces)
-
-</p>
 
 ---
 
