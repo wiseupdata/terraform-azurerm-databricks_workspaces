@@ -1,3 +1,5 @@
+Easy create multiples Databricks workspaces!
+
 <a href="https://github.com/wiseupdata/terraform-azurerm-databricks_workspaces">
   <img align="left" alt="Wise Up Data's Instagram" width="22px" src="https://raw.githubusercontent.com/wiseupdata/terraform-azurerm-databricks_workspaces/main/assets/instagram.png" />   
 </a> 
@@ -22,8 +24,7 @@
 Module - Databricks workspaces in Azure 🚀️
 
 </h1>
-
-> Easy, create multiples Databricks workspaces | last version tested >> Terraform 4.1 and azurerm 3.48
+Last version tested | Terraform 4.1 and azurerm 3.48
 
 ## Simple config. ❤️
 
